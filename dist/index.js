@@ -19,4 +19,7 @@ app.get('/', (req, res) => {
 // Iniciar servidor
 app.listen(PORT, () => {
     console.log('Servidor corriendo en http://localhost:', PORT);
+    app.set('views', path.join(__dirname, 'views')); // NO src/views
+app.set('view engine', 'ejs');
+
 });
