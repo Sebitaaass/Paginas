@@ -4,14 +4,15 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon dist/index.js",
-    "build": "echo \"No hay proceso de build aún\"",
+    "start": "node dist/index.js",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "ejs": "^3.1.10",
     "express": "^5.1.0"
   },
   "devDependencies": {
